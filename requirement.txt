@@ -1,0 +1,6 @@
+google-cloud-storage
+firebase
+python_jwt
+gcloud
+sseclient
+pycryptodome
