@@ -1,10 +1,10 @@
 import streamlit
-# import numpy
+import numpy
 from PIL import Image
-# from google.cloud import storage
-# from firebase import firebase
-# import os,datetime
-# from Crypto.PublicKey import RSA
+from google.cloud import storage
+from firebase import firebase
+import os,datetime
+from Crypto.PublicKey import RSA
 img_file_buffer = streamlit.file_uploader("Upload an image")
 if img_file_buffer is not None:
     image = Image.open(img_file_buffer)
