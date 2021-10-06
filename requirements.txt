@@ -1,5 +1,6 @@
 pillow
 requests
+requests_toolbelt
 google-cloud-storage
 firebase
 python_jwt
