@@ -1,3 +1,5 @@
+pillow
+requests
 google-cloud-storage
 firebase
 python_jwt
