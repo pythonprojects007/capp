@@ -10,7 +10,7 @@ if img_file_buffer is not None:
     image = Image.open(img_file_buffer)
     print(image)
     image.save("upload.jpg")
-    streamlit.image(imge)
+    streamlit.image(image)
     input_image = numpy.array(image)
     os.environ["GOOGLE_APPLICATION_CREDENTIALS"]="plenary-ridge-832-053e3d5e7f09.json"
     firebase = firebase.FirebaseApplication('https://plenary-ridge-832.firebaseio.com/')
