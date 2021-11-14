@@ -8,15 +8,15 @@ from Crypto.PublicKey import RSA
 from streamlit_webrtc import VideoTransformerBase, webrtc_streamer
 
 
-class VideoTransformer(VideoTransformerBase):
-    def __init__(self):
-        self.i = 0
+# class VideoTransformer(VideoTransformerBase):
+#     def __init__(self):
+#         self.i = 0
 
-    def transform(self, frame):
-        img = frame.to_ndarray(format="bgr24")
-        return img
+#     def transform(self, frame):
+#         img = frame.to_ndarray(format="bgr24")
+#         return img
 
-webrtc_streamer(key="example", video_transformer_factory=VideoTransformer)
+webrtc_streamer(key="example")
 # img_file_buffer = streamlit.file_uploader("Upload an image")
 # if img_file_buffer is not None:
 #     image = Image.open(img_file_buffer)
